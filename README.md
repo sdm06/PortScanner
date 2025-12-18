@@ -1,10 +1,10 @@
 
 ```
-# C-ThreadScan
+### C-ThreadScan
 
 A high-performance, multi-threaded TCP port scanner written in C. This project explores low-level networking, POSIX threads, and thread-safe console logging.
 
-##  Features
+###  Features
 - **Parallel Scanning:** Distributes port ranges across multiple threads using `pthread`.
 - **Thread Safety:** Implements `pthread_mutex_t` to prevent race conditions during reporting.
 - **Nix-Native:** Optimized for **NixOS** with a dedicated `shell.nix`.
@@ -14,7 +14,7 @@ A high-performance, multi-threaded TCP port scanner written in C. This project e
 
 ---
 
-##  Installation & Building
+###  Installation & Building
 
 ### Option 1(Using NixOS): Enter the Nix Shell
 Load the GCC compiler, GNUMake, and Netcat for testing:
