@@ -15,44 +15,39 @@ Installation and Building
 1. Environment Setup
 
 Option A: NixOS (Recommended) Load the GCC compiler, GNUMake, and Netcat via the provided shell:
-Bash
-
+```bash
 nix-shell
-
+```
 Option B: Other Linux Distros (Ubuntu, Arch, Fedora, etc.) Ensure you have gcc and make installed via your package manager:
-Bash
+```bash
 
 # Example for Ubuntu/Debian
 sudo apt install build-essential
-
+```
 2. Compilation
 
 Once your environment is ready, use the Makefile to link the pthread library and build the binary:
-Bash
-
+```bash
 make
-
+```
 Usage
 
 The scanner requires four arguments: Target IP, Start Port, End Port, and Thread Count.
-Bash
-
+```bash
 ./scanner <IP> <StartPort> <EndPort> <Threads>
-
+```
 Local Testing
 
 To verify the scanner logic, open a listener in one terminal and scan it with another.
 
 Terminal 1 (Listener):
-Bash
-
+```bash
 \nc -l 777
-
+```
 Terminal 2 (Scanner):
-Bash
-
+```bash
 ./scanner 127.0.0.1 700 800 4
-
+```
 Technical Deep Dive
 Thread Management
 
