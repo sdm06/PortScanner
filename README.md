@@ -55,12 +55,12 @@ The program utilizes the Worker Pattern. It calculates a specific range of ports
 The Mutex Lock
 
 To prevent "Interleaved Output"—where multiple threads attempt to write to the console simultaneously—the program uses a Mutual Exclusion (Mutex) object. This ensures the output remains legible and synchronized.
-C
+```C
 
 pthread_mutex_lock(&log_mutex);
 printf("[+] Port %d is OPEN\n", port);
 pthread_mutex_unlock(&log_mutex);
-
+```
 Requirements
 
     OS: Linux (NixOS, Arch, Ubuntu, etc.)
