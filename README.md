@@ -1,5 +1,5 @@
 
-```markdown
+```
 # C-ThreadScan
 
 A high-performance, multi-threaded TCP port scanner written in C. This project explores low-level networking, POSIX threads, and thread-safe console logging.
