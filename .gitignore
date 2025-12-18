@@ -1,0 +1,18 @@
+# Compiled Binaries
+scanner
+
+# Object files
+*.o
+
+# Nix environment
+.nix-shell
+result
+
+# Neovim / Vim
+*.swp
+*.swo
+.netrwhist
+undo/
+
+# Build artifacts
+*.out
